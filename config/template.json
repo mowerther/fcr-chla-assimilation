@@ -1,0 +1,6 @@
+{
+  "description": "Template member: the GLM-AED configuration Deepm2_exm_weight2 of Kurucz et al. (2024), with the changes listed in config/README.md. Its nutrient and sinking values already carry the multipliers below. Members rescale them by the ratio of their own multiplier to these.",
+  "published_kw": 0.4136778243201735,
+  "initial_dissolved_NP_multiplier": 0.6074009986278577,
+  "phyto_sinking_magnitude_multiplier": 0.733813353129992
+}

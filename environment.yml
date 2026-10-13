@@ -1,0 +1,13 @@
+# Python environment for the scripts. Used with Python 3.12.14 on macOS (arm64).
+# The model runs in Docker (linux/amd64): GLM-AED glm+ 3.3.1a2 with AED 2.1.0 from
+# doi:10.5281/zenodo.11183590, on Ubuntu 20.04 (docker/Dockerfile).
+name: fcr-chla-assimilation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.5.2
+      - pandas==3.0.5
+      - scipy==1.18.1

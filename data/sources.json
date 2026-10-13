@@ -1,0 +1,302 @@
+{
+  "sources": [
+    {
+      "id": "glm_aed_configuration",
+      "name": "Data and software for the GLM-AED simulation and model calibration of the Falling Creek Reservoir (Kurucz et al., 2024)",
+      "version": "v1.0.1",
+      "doi": "10.5281/zenodo.11183590",
+      "licence": "CC-BY-4.0",
+      "redistributed": false,
+      "files": [
+        {
+          "url": "https://zenodo.org/records/11183590/files/AquaticEcoDynamics/FCR-GLM-metrics-v1.0.1.zip?download=1",
+          "sha256": "b83ceee9ec5781c0e30bb89dbe11b6617b74125220a8bbea4bb8b8b9a61c2347",
+          "bytes": 230746956,
+          "path": "zenodo_11183590/FCR-GLM-metrics-v1.0.1.zip",
+          "archive": "zip",
+          "extract": [
+            {
+              "member": "AquaticEcoDynamics-FCR-GLM-metrics-19d0528/Calibrated_models/Deepm2_exm_weight2/glm+_latest/glm+",
+              "sha256": "e8cd27e1a283e23c354c25587bcc5344d94363dabd96dbf17e1b5b679df7c614",
+              "target": "runtime/glm+",
+              "executable": true
+            },
+            {
+              "member": "AquaticEcoDynamics-FCR-GLM-metrics-19d0528/Calibrated_models/Deepm2_exm_weight2/inputs/FCR_spillway_outflow_WeirOnly_2013_2020_20211102.csv",
+              "sha256": "72c3d7fa391122ccad6dd436869fb68bf6a249e0308277d139be14ded98c04aa",
+              "target": "runtime/forcing/FCR_spillway_outflow_WeirOnly_2013_2020_20211102.csv"
+            },
+            {
+              "member": "AquaticEcoDynamics-FCR-GLM-metrics-19d0528/Calibrated_models/Deepm2_exm_weight2/inputs/FCR_weir_inflow_2013_2020_20220411_allfractions_2poolsDOC_1dot5xDOCr.csv",
+              "sha256": "27d99d92b20853035160d5ddb36a226f6997469b3a4f4880d18fc8e956f58fb4",
+              "target": "runtime/forcing/FCR_weir_inflow_2013_2020_20220411_allfractions_2poolsDOC_1dot5xDOCr.csv"
+            },
+            {
+              "member": "AquaticEcoDynamics-FCR-GLM-metrics-19d0528/Calibrated_models/Deepm2_exm_weight2/inputs/inflow_SSS_K_elevation_waterquality.csv",
+              "sha256": "27c8dd5b5435b1722508fa3cc02168c58265f54f149fc66566ee167554a75e4a",
+              "target": "runtime/forcing/inflow_SSS_K_elevation_waterquality.csv"
+            },
+            {
+              "member": "AquaticEcoDynamics-FCR-GLM-metrics-19d0528/Calibrated_models/Deepm2_exm_weight2/inputs/met_avg_filtered.csv",
+              "sha256": "59c2a61e280adaea121afb4c6a236d82d8a711c748fa208dd976b04a110823fa",
+              "target": "runtime/forcing/met_avg_filtered.csv"
+            },
+            {
+              "member": "AquaticEcoDynamics-FCR-GLM-metrics-19d0528/Calibrated_models/Deepm2_exm_weight2/inputs/outflow_K.csv",
+              "sha256": "e542685f8261ec842f766ab704d1f780eb535c7d348b81349e2711c58ca65433",
+              "target": "runtime/forcing/outflow_K.csv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intel_fortran_runtime",
+      "name": "Intel Fortran runtime libraries required by the published glm+ executable (Anaconda packages)",
+      "version": "2023.1.0",
+      "licence": "Intel End User License Agreement for Developer Tools",
+      "redistributed": false,
+      "files": [
+        {
+          "url": "https://api.anaconda.org/download/anaconda/intel-fortran-rt/2023.1.0/linux-64/intel-fortran-rt-2023.1.0-h06a4308_46305.tar.bz2",
+          "sha256": "6ec975a6ed5cd1172daab3d656044ef6974b37d3951355ffc0bfaec6f28db328",
+          "bytes": 1098087,
+          "path": "anaconda/intel-fortran-rt-2023.1.0-h06a4308_46305.tar.bz2",
+          "archive": "tar.bz2",
+          "extract": [
+            {
+              "member": "lib/libifcore.so.5",
+              "sha256": "eba040029e7c686504cc7bc4a6c5434434e9cedada7b14b2e032608cc3eeb1e9",
+              "target": "runtime/lib/libifcore.so.5"
+            },
+            {
+              "member": "lib/libifport.so.5",
+              "sha256": "09aa44b619e6d4a2e611efce29089d703c3f74e1bb3b03ccf4dc7e26978986f2",
+              "target": "runtime/lib/libifport.so.5"
+            }
+          ]
+        },
+        {
+          "url": "https://api.anaconda.org/download/anaconda/intel-cmplr-lib-rt/2023.1.0/linux-64/intel-cmplr-lib-rt-2023.1.0-h06a4308_46305.tar.bz2",
+          "sha256": "e582f3ed100d181e7a0fc447fc7a4746c3ed822d9e02ed53b32f9584b4fb6915",
+          "bytes": 39285996,
+          "path": "anaconda/intel-cmplr-lib-rt-2023.1.0-h06a4308_46305.tar.bz2",
+          "archive": "tar.bz2",
+          "extract": [
+            {
+              "member": "lib/libimf.so",
+              "sha256": "b930692a72dd7cbf8a4a8fb0f00946cef62bb2755646a562a4d9afbca16afe70",
+              "target": "runtime/lib/libimf.so"
+            },
+            {
+              "member": "lib/libsvml.so",
+              "sha256": "a8fab76ae5c661146d4836cc1fdf0a2cde2df4447352f30eefff69ed521ba74b",
+              "target": "runtime/lib/libsvml.so"
+            },
+            {
+              "member": "lib/libintlc.so.5",
+              "sha256": "cf477f1983f3520311e6c87d441aa62fc614b911a05b23724327b5910e3c803a",
+              "target": "runtime/lib/libintlc.so.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glm3_headers",
+      "name": "GLM3 source headers glm.h and glm_types.h, used to compile the state exchange library",
+      "version": "commit 8453b1d0a9b58de9f44a515b4a8d48bd3b6ff967",
+      "licence": "GPL-3.0",
+      "redistributed": false,
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/AquaticEcoDynamics/GLM3/8453b1d0a9b58de9f44a515b4a8d48bd3b6ff967/src/glm.h",
+          "sha256": "2344a29779dbec009ec61cf9ab83078439c4f4d8c5329b6682ded519171ec238",
+          "path": "glm3/glm.h"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AquaticEcoDynamics/GLM3/8453b1d0a9b58de9f44a515b4a8d48bd3b6ff967/src/glm_types.h",
+          "sha256": "6a93df5f59f1d0330590b5e00d7425cfb84206bac3a2395e30da95b6140f2bf8",
+          "path": "glm3/glm_types.h"
+        }
+      ]
+    },
+    {
+      "id": "edi_555_5_filtered_chlorophyll",
+      "name": "Filtered chlorophyll a time series ... during 2014-2024 (Carey et al., 2025), file filt-chla_2014_2024.csv",
+      "edi_package": "edi.555.5",
+      "doi": "10.6073/pasta/7cc4e7541c75738e5c4d6bb948c2df8e",
+      "licence": "CC-BY-4.0",
+      "download_location": "Downloaded from the GitHub repository CareyLabVT/Reservoirs at commit d12c7dd3fbf0e2610f29ba66b6650fc4021e3913",
+      "redistributed": false,
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataAlreadyUploadedToEDI/EDIProductionFiles/MakeEMLFilteredChlorophyll/2024/filt-chla_2014_2024.csv",
+          "sha256": "b5b6917c1843c89fe05368cbe4d39727779f315c13d4edc72e670b423c8136f9",
+          "bytes": 63780,
+          "path": "carey_lab/filt-chla_2014_2024.csv"
+        }
+      ]
+    },
+    {
+      "id": "edi_200_16_ctd",
+      "name": "CTD profiles 2013-2025 (Carey et al., 2026a). The package publishes the profiles in ctd_2013_2025.csv. This analysis reads the individual 2018 cast files from which that file is built (Raw_CTD/csv_outputs) and the package maintenance log",
+      "edi_package": "edi.200.16",
+      "doi": "10.6073/pasta/96955da18a4bb1d01137837e73e79d5e",
+      "licence": "CC-BY-NC-4.0",
+      "download_location": "Downloaded from the GitHub repository CareyLabVT/Reservoirs at commit d12c7dd3fbf0e2610f29ba66b6650fc4021e3913",
+      "redistributed": false,
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataAlreadyUploadedToEDI/EDIProductionFiles/MakeEMLCTD/CTD_EDI_2025/ctd_maintenancelog_2013_2025.csv",
+          "sha256": "b86dd4c702b9beba7c35a7369becdedad3e6627a3f0224ceb545ae7f10857fd1",
+          "bytes": 4485,
+          "path": "carey_lab/ctd_maintenancelog_2013_2025.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/050418_fcr50.csv",
+          "sha256": "a41566d267b1192a6cbd4c149c88cda8dd0f649dd3592f0918657211e5216ccc",
+          "bytes": 107948,
+          "path": "carey_lab/ctd/050418_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/050718_fcr50.csv",
+          "sha256": "766b031ff3355f25364d5107e687981c727aaba15d1a4a84e7dfe26ca22d754c",
+          "bytes": 143618,
+          "path": "carey_lab/ctd/050718_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/051118_fcr50.csv",
+          "sha256": "9afec2849214341dc0957d26afc7f6d776e0015a2419af199bb50f8c9fac2650",
+          "bytes": 52675,
+          "path": "carey_lab/ctd/051118_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/051418_fcr50.csv",
+          "sha256": "20e3c8a67023957658507833c50bb3e7049cdb904a0443c3da04882db46152dd",
+          "bytes": 72911,
+          "path": "carey_lab/ctd/051418_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/051718_fcr50.csv",
+          "sha256": "ec299b99ec565d673c4fc373701a78645b9ce84a34c8eb5304dfd672893d5929",
+          "bytes": 92787,
+          "path": "carey_lab/ctd/051718_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/052418_fcr50.csv",
+          "sha256": "78a1dba55028eb3ede47ffebd2badba2db25b1b77c66abb5977e1775580d693b",
+          "bytes": 52028,
+          "path": "carey_lab/ctd/052418_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/052818_fcr50.csv",
+          "sha256": "307f8cd5d4769f31f4a7cc0b3742c0ac83cc2a195b0db88079387f9143a47902",
+          "bytes": 75500,
+          "path": "carey_lab/ctd/052818_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/053018_fcr50.csv",
+          "sha256": "99633213cf6ec1f1703d6d6bb8c7a3d40e09c86e53373738912eeb9a06c72728",
+          "bytes": 63903,
+          "path": "carey_lab/ctd/053018_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/053118_fcr50.csv",
+          "sha256": "7fa92391ae126924d5615d10d54155929ae83a77f08ea6dfc67d09a12aff8178",
+          "bytes": 68291,
+          "path": "carey_lab/ctd/053118_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/060418_fcr50.csv",
+          "sha256": "6916d46b1e3a02c441fbb94c5b9f21cc392fe804d5de7cd27ebf8fd58c7fdb6b",
+          "bytes": 44910,
+          "path": "carey_lab/ctd/060418_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/060718_fcr50.csv",
+          "sha256": "c8a479d4a363b02c7b37becc2bd3d79504b0da6253c93ad5fecf077156772b6c",
+          "bytes": 146279,
+          "path": "carey_lab/ctd/060718_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/061118_fcr50.csv",
+          "sha256": "e58ff48a61d0a3d949719332f87082d229028e1d76c8248c4f13e6a3af399b4b",
+          "bytes": 82509,
+          "path": "carey_lab/ctd/061118_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/061418_fcr50.csv",
+          "sha256": "0aea079248156792acff4e6f5fb84b983cf33fe199ddb0964b38e1599756a2d9",
+          "bytes": 70243,
+          "path": "carey_lab/ctd/061418_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/061818_fcr50.csv",
+          "sha256": "a5b53fef4a09c4eca0c3a3095af23b6b7aa69d3675387dfffd8e68b2a2983aea",
+          "bytes": 55306,
+          "path": "carey_lab/ctd/061818_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/061818_fcr50_b.csv",
+          "sha256": "f8b57d631555937fbdde6afdab42be4e13e3c6dfb71f084750f7ef6666acb772",
+          "bytes": 75507,
+          "path": "carey_lab/ctd/061818_fcr50_b.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/062118_fcr50.csv",
+          "sha256": "9a6b30effccefee2d44498f5b74b15d17e98bb8bab5804932333ce77fb6cbea6",
+          "bytes": 49491,
+          "path": "carey_lab/ctd/062118_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/062518_fcr50.csv",
+          "sha256": "6d0f08413a89013a379f95d1161a8e3c32c1c8ddc34675ecbb74e4686cd49a51",
+          "bytes": 71606,
+          "path": "carey_lab/ctd/062518_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/062818_FCR50.csv",
+          "sha256": "16b00549ca81299f7bd01ed9c14273159f7a1f4b10e21133aaac2f0b8c7ecc13",
+          "bytes": 84775,
+          "path": "carey_lab/ctd/062818_FCR50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/070218_fcr50.csv",
+          "sha256": "2c9c4847387b56bd1d46e536fec0df3b665fb95f8a205b5f7d2520ff98e9526b",
+          "bytes": 62210,
+          "path": "carey_lab/ctd/070218_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/070518_fcr50.csv",
+          "sha256": "16bd5915c088185c48301ab95b297d9e1b6ea691f750465d77a096d240fbb702",
+          "bytes": 110700,
+          "path": "carey_lab/ctd/070518_fcr50.csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataNotYetUploadedToEDI/Raw_CTD/csv_outputs/070918_FCR50.csv",
+          "sha256": "16a2aa80523dff34f4faa649663fc711b9276d6aec32cd8895a5a2e30212b4db",
+          "bytes": 65212,
+          "path": "carey_lab/ctd/070918_FCR50.csv"
+        }
+      ]
+    },
+    {
+      "id": "edi_198_14_secchi",
+      "name": "Secchi depth and discrete depth profiles 2013-2025 (Carey et al., 2026b), file secchi_2013_2025.csv",
+      "edi_package": "edi.198.14",
+      "doi": "10.6073/pasta/b20ba95d3667532e4dd8bede8a00ab52",
+      "licence": "CC-BY-NC-4.0",
+      "download_location": "Downloaded from the GitHub repository CareyLabVT/Reservoirs at commit d12c7dd3fbf0e2610f29ba66b6650fc4021e3913",
+      "redistributed": false,
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/CareyLabVT/Reservoirs/d12c7dd3fbf0e2610f29ba66b6650fc4021e3913/Data/DataAlreadyUploadedToEDI/EDIProductionFiles/MakeEMLYSI_PAR_secchi/2025/secchi_2013_2025.csv",
+          "sha256": "940e7bf2124f08f270b04366ed4f45af2092981dd5345821f8f5e79cfda71eb9",
+          "bytes": 31932,
+          "path": "carey_lab/secchi_2013_2025.csv"
+        }
+      ]
+    }
+  ]
+}

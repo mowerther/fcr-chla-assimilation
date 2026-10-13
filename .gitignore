@@ -1,0 +1,12 @@
+# Downloaded inputs and the runtime assembled from them
+downloads/
+runtime/
+
+# Model runs and other generated outputs
+runs/
+output/
+
+# Python and system files
+__pycache__/
+*.pyc
+.DS_Store

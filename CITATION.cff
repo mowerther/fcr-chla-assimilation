@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Assimilating chlorophyll-a near the surface into GLM-AED for Falling Creek Reservoir"
+version: 1.0.0
+date-released: 2026-10-14
+authors:
+  - family-names: Werther
+    given-names: Mortimer
+    orcid: "https://orcid.org/0000-0002-0775-9285"
+    affiliation: "Eawag, Swiss Federal Institute of Aquatic Science and Technology"
+repository-code: "https://github.com/mowerther/fcr-chla-assimilation"
+url: "https://github.com/mowerther/fcr-chla-assimilation/releases/tag/v1.0.0"
+license: MIT
+keywords:
+  - data assimilation
+  - ensemble Kalman filter
+  - GLM-AED
+  - chlorophyll-a
+  - Falling Creek Reservoir
